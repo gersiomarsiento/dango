@@ -2,9 +2,9 @@
 import { useState } from "react"
 
  function Card ({onItemCountChange }) {
-    const [textInput, setTextInput] = useState("");
-    const [fontSize, setFontSize] = useState(20);
-    const [itemCount, setItemCount] = useState(1);
+    const [textInput, setTextInput] = useState(""); // Title text tracker + updater
+    const [fontSize, setFontSize] = useState(20); // Title size tracker + updater
+    const [itemCount, setItemCount] = useState(1); // Item count tracker + updater
 
     const changeInput = (text) => {{
         const newText = text.target.value;
@@ -15,8 +15,8 @@ import { useState } from "react"
         setFontSize(newFontSize);
     }}
     const changeItemCount = (count) => {{
-        const prevItemCount = itemCount;
-        const newItemCount = count.target.value || 0;
+        const prevItemCount = itemCount; // Save old value for total Item Count
+        const newItemCount = count.target.value || 0; // Default to 0 if NaN 
         setItemCount(newItemCount);
         onItemCountChange(newItemCount, prevItemCount);
     }}

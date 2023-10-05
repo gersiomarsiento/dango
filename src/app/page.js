@@ -3,11 +3,12 @@ import Card from "./Cards";
 import { useState } from "react";
 
 export default function Home() {
-  const [totalItemCount, setTotalItemCount] = useState(6); // State for total totalItem count
+  const [totalItemCount, setTotalItemCount] = useState(6); // To keep track/update item count
 
   const handleTotalItemCountChange = (newItemCount, prevItemCount) => {
+    // Values coming fron Card inputs (itemCount)
     setTotalItemCount(
-      totalItemCount + parseInt(newItemCount) - parseInt(prevItemCount)
+      totalItemCount + parseInt(newItemCount) - parseInt(prevItemCount) // Modify total item count using the difference between old and new values in input
     );
   };
   return (
