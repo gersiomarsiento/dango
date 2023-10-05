@@ -17,12 +17,32 @@ export default function Home() {
         Total Item Count: {totalItemCount}
       </div>
       <div className="main-container flex-wrap">
-        <Card onItemCountChange={handleTotalItemCountChange} />
-        <Card onItemCountChange={handleTotalItemCountChange} />
-        <Card onItemCountChange={handleTotalItemCountChange} />
-        <Card onItemCountChange={handleTotalItemCountChange} />
-        <Card onItemCountChange={handleTotalItemCountChange} />
-        <Card onItemCountChange={handleTotalItemCountChange} />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Eucalyptus Bar Soap"
+        />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Argan Oil Bar Soap"
+        />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Tea Tree Bar Soap"
+        />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Unscented Bar Soap"
+        />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Tea Tree Bar Soap"
+          className="title-centered"
+        />
+        <Card
+          onItemCountChange={handleTotalItemCountChange}
+          defaultTitle="Tourmaline & Unscented Bar Soap"
+          className="title-centered"
+        />
       </div>
     </>
   );
