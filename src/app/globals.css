@@ -3,9 +3,41 @@
 @tailwind utilities;
 
 
+body {
+  padding: 2% !important;
+}
 .main-container {
   display: flex;
+  justify-content: center;
+  padding: 1%;
   flex-direction: row;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+@media only screen and (min-width: 800px) {
+  .card-container {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .card-container {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .card-container {
+    width: 22.5%;
+  }
+}
+
+
+.card-container img {
+
 }
 
 input::-webkit-outer-spin-button,

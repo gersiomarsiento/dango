@@ -20,27 +20,33 @@ export default function Home() {
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Eucalyptus Bar Soap"
+          imgSrc="1.webp"
         />
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Argan Oil Bar Soap"
+          imgSrc="2.webp"
         />
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Tea Tree Bar Soap"
+          imgSrc="3.webp"
         />
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Unscented Bar Soap"
+          imgSrc="4.webp"
         />
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Tea Tree Bar Soap"
+          imgSrc="5.webp"
           className="title-centered"
         />
         <Card
           onItemCountChange={handleTotalItemCountChange}
           defaultTitle="Tourmaline & Unscented Bar Soap"
+          imgSrc="6.webp"
           className="title-centered"
         />
       </div>
